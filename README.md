@@ -11,6 +11,14 @@ You can run your application in dev mode that enables live coding using:
 ./mvnw compile quarkus:dev
 ```
 
+Post data to the application, for example:
+```shell script
+curl --location 'http://localhost:8080?parameter=test' \
+--header 'Content-Type: application/json' \
+--data '{
+    "some": "data"
+}'
+```
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
 
 ## Packaging and running the application
