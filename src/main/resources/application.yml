@@ -1,0 +1,10 @@
+batch:
+  size: 5
+  timeoutms: 10000
+  # can be single or batch 
+  # Batch: concatenate all requests into a single body and send them as one request
+  # Single: send each request individually
+  mode: batch
+  
+forward:
+  to: http://httpbin.org/anything
